@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{52D4FFAC-4B5E-4175-B71A-1193419C7DEA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{52D4FFAC-4B5E-4175-B71A-1193419C7DEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Logic", "Logic\Logic.csproj", "{6833808F-3FC0-4832-B88B-D71EF535F2F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Logic", "Logic\Logic.csproj", "{6833808F-3FC0-4832-B88B-D71EF535F2F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication\WebApplication1.csproj", "{3CE9413C-FED4-4ED2-8B5A-39F8A7F4BDC1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{6833808F-3FC0-4832-B88B-D71EF535F2F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6833808F-3FC0-4832-B88B-D71EF535F2F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6833808F-3FC0-4832-B88B-D71EF535F2F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CE9413C-FED4-4ED2-8B5A-39F8A7F4BDC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CE9413C-FED4-4ED2-8B5A-39F8A7F4BDC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE9413C-FED4-4ED2-8B5A-39F8A7F4BDC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE9413C-FED4-4ED2-8B5A-39F8A7F4BDC1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
