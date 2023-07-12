@@ -1,18 +1,22 @@
-﻿using Logic.FarmExample;
-using Logic.SimpleDIExample;
+﻿using Logic.ContainerExample;
+using Microsoft.Extensions.DependencyInjection;
 
 // Simple DI
-SimpleDIExample.RunExample();
+var services = new ServiceCollection();
 
-Console.WriteLine();
-Console.WriteLine("####################################");
-Console.WriteLine();
+services
+    .AddSingleton<IDataConverter, DataConverter>()
+    .AddSingleton<ICalculator, Calculator>()
+    .AddSingleton<ISender, Sender>()
 
-// Lifestyle example
-FarmExample.RunExample();
+    .AddScoped<IRepository, Repository>()
+    .AddScoped<IProcessor, Processor>();
 
-Console.WriteLine();
-Console.WriteLine("####################################");
-Console.WriteLine();
+var serviceProvider = services.BuildServiceProvider(validateScopes: true);
 
+using var scope = serviceProvider.CreateScope();
+
+var processor = scope.ServiceProvider.GetRequiredService<IProcessor>();
+
+await processor.ProcessAsync(CancellationToken.None);
 
