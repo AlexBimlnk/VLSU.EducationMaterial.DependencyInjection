@@ -1,4 +1,5 @@
 using Logic.ContainerExample;
+using WebApplication1;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,7 +13,9 @@ builder.Services
     .AddSingleton<ISender, Sender>()
 
     .AddScoped<IRepository, Repository>()
-    .AddScoped<IProcessor, Processor>();
+    .AddScoped<IProcessor, Processor>()
+
+    .AddMyServiceExamples();
 
 var app = builder.Build();
 
